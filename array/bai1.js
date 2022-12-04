@@ -69,16 +69,27 @@ const randomArray = (array ) =>{
     
 }
 // bai9
-const similarity = (array1 , array2) =>{
-
+const similarity = (array, array1) =>{
+    const result = array.filter(item => array1.includes(item))
+    return result
 }
 // bai10
 
 const symmetricDifference = (array1 , array2) =>{
-
+ const result = array.filter(item => !array1.includes(item))
+    return result
 }
 
 // bai11
+const sub_String = (stringData) => {
+  const subset = [];
+  for (let m = 0; m < stringData.length; m++) {
+    for (let n = m + 1; n < stringData.length + 1; n++) {
+      subset.push(stringData.slice(m, n));
+    }
+  }
+  return subset;
+};
 
 // bai12
 
